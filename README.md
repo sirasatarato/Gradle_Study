@@ -33,3 +33,11 @@
 > gradlew.bat파일 실행, 또는 터미널 창으로도 가능
   - gradle-wapper.jar
   - gradle-wapper.properties
+
+## 그래이들 뷰
+- 구성
+  - android
+  - build
+  - install
+  - other
+- run configurations: 자주 실행하는 task 모음
