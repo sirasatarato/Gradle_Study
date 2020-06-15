@@ -62,3 +62,21 @@
     - 비밀번호가 걸린 저장소: credentials로 하드코딩(하드코딩한 내용들은 보통 gradle.properties에 저장한다.)
 - ivy: 로컬 저장소 가져오기, URL로 직접 지정
 - flatFir: 로컬 파일 시스템에 있는 라이브러리 파일을 참조
+
+## gradle.properties
+```
+// gradle.properties
+login='user'
+pass='my_long_and_highly_complex_password'
+
+// 모듈 build.gradle
+repositories {
+  maven {
+    url 'http://repo.mycompony.com/maven2'
+    credentials {
+      username login
+      password pass
+    }
+  }
+}
+```
