@@ -120,3 +120,19 @@ andorid {
   }
 }
 ```
+
+## 제품 특성
+> 동일한 애플리케이션의 다양한 버전을 의미(예: 유료 버전, 무료 버전)
+  지정하기 위해선 productFlavors 지정
+```
+andorid {
+  productFlavors {
+    아무이름a {
+      applicationId 'com.compony.product.a'
+    }
+    아무이름b {
+      applicationId 'com.compony.product.b'
+    }
+  }
+}
+```
