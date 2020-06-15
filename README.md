@@ -99,3 +99,24 @@ repositories {
   - keyPassword: 서명할 때 사용한 키의 비밀번호
   - storeFile: keytool에 의해 생성된 키와 인증서를 저장하는 물리적인 파일
   - storePassword: 키 저장소의 비밀번호
+  
+  ## 빌드 타입
+> 애플리케이션을 어떻게 패키징할 것인가를 결정
+
+```
+andorid {
+  buildTypes {
+    debug {
+      applicationIDsuffix '.debug'  // 한 기기에 여러 빌드 타입을 설치하려면 applicationIDsuffix을 변경
+      versionNameSuffix '-debug'
+      debugable true          // debug만 기본값으로 true
+    }
+
+    release {
+      minifyEnabled true      // 코드 줄이기
+      shrinkResources true    // 리소스 줄이기
+      debugable false
+    }
+  }
+}
+```
