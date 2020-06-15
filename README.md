@@ -52,3 +52,13 @@
 - androidDependencies task: 참조하는 라이브러리와 전이적 의존성을 보여줌
 - dependencies블록의 transtive: true, false로 의존하는 라이브러리까지 받을 것인지 지정한 라이브러리만 받을 것인지 결정
 - Project Stucture - Dependencies 탭: 외부라이브러리 관리 창
+
+## 저장소
+- jcenter: HTTPS로 연결해서 빠른 속도 유지
+- maven: 
+  - mavenCentral: 공개 메이븐 중앙 저장소
+  - mavenLocal: 로컬 메이븐 캐시
+  - 기타: URL을 직접 지정
+    - 비밀번호가 걸린 저장소: credentials로 하드코딩(하드코딩한 내용들은 보통 gradle.properties에 저장한다.)
+- ivy: 로컬 저장소 가져오기, URL로 직접 지정
+- flatFir: 로컬 파일 시스템에 있는 라이브러리 파일을 참조
