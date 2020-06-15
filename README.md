@@ -84,3 +84,18 @@ repositories {
 ## gradle 공통
 - allprojects
 - subprojects: 하위프로젝트 적용
+
+## APK 서명
+> 기본 인증서 나열  
+.android> keytool -list -keystore debug.keystore
+
+- 기본 값은 디버그 모드로 서명
+- 확인: keytool 명령어
+- 디버그 키 저장소: .android 딝터리
+  - 키 저장소 이름: debug.keystore
+    - 비밀번호: andorid
+- signingConfigs
+  - keyAlias: 서명할 때 keytool에서 사용하는 키의 별칭
+  - keyPassword: 서명할 때 사용한 키의 비밀번호
+  - storeFile: keytool에 의해 생성된 키와 인증서를 저장하는 물리적인 파일
+  - storePassword: 키 저장소의 비밀번호
