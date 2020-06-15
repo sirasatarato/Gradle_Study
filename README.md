@@ -41,3 +41,14 @@
   - install
   - other
 - run configurations: 자주 실행하는 task 모음
+
+## 외부 라이브러리 추가
+- configuartion: 외부 라이브러리 명시
+  - compile
+  - runtime
+  - testCompile
+  - testRuntime
+- files, fileTree: 로컬 파일 시스템에 있는 파일 참조
+- androidDependencies task: 참조하는 라이브러리와 전이적 의존성을 보여줌
+- dependencies블록의 transtive: true, false로 의존하는 라이브러리까지 받을 것인지 지정한 라이브러리만 받을 것인지 결정
+- Project Stucture - Dependencies 탭: 외부라이브러리 관리 창
