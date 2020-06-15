@@ -80,3 +80,7 @@ repositories {
   }
 }
 ```
+
+## gradle 공통
+- allprojects
+- subprojects: 하위프로젝트 적용
