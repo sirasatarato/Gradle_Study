@@ -113,7 +113,7 @@ andorid {
     }
 
     release {
-      minifyEnabled true      // 코드 줄이기
+      minifyEnabled true      // 코드 줄이기, true로 해놓을 시 proguard 활성화
       shrinkResources true    // 리소스 줄이기
       debugable false
     }
