@@ -136,3 +136,16 @@ andorid {
   }
 }
 ```
+
+## 빌드 변형
+> 빌드 타입과 제품 특성을 조합(예: (디버그, 릴리스) X (제품특성 2개) = 4)  
+assemble: apk 생성
+```
+task printNames() {
+  dolast {
+    android.applicationVariants.all { v ->
+      println v.name
+    }
+  }
+}
+```
